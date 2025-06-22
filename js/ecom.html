@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+<link rel="stylesheet" href="./ecom.css">
+  <title>Ecom with Discount</title>
+  <link rel="stylesheet" href="ecom.css" />
+</head>
+
+<body>
+  <nav class="navi" style="display: flex;">
+    <h1 class="head1">Moonlight Cafe</h1>
+
+    <ul class="nav-list">
+      <li class="dropdown">
+        <a href="#">Home</a>
+      </li>
+      <li class="dropdown">
+        <a href="#">
+          Items <i class="fa fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-content">
+          <li><a href="#">Fruits</a></li>
+          <li><a href="#">Milk Shakes</a></li>
+          <li><a href="#">Coffee</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">
+          Offers <i class="fa fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-content">
+          <li><a href="#">Meal for two</a></li>
+          <li><a href="#">Family Pack</a></li>
+          <li><a href="#">Iftar Items</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="search-account">
+      <a href="https://www.google.com" class="account-link" target="_blank" rel="noopener noreferrer"
+        >Account</a
+      >
+      <input type="text" placeholder="Type Your item" />
+      <button id="searchbutton">Search</button>
+      <div class="cart-container">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <sub>0</sub>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+        alt="Cafe"
+      />
+    </div>
+
+    <div class="hero-content">
+      <h1>Welcome to Moonlight Cafe</h1>
+      <p>
+        Your one-stop destination for delicious food and drinks. Enjoy fresh
+        fruits, milk shakes, coffee, and more!
+      </p>
+      <div class="special-offer">
+        <i class="fa fa-gift"></i>
+        Special Offer: <span>50% OFF</span> on all Milk Shakes this week!
+      </div>
+      <a href="#" class="order-button">Order Now</a>
+    </div>
+  </section>
+
+  <!-- Discount input section -->
+  <section class="discount-section">
+    <label for="discountInput">Set Discount (%): </label>
+    <input
+      type="number"
+      id="discountInput"
+      min="0"
+      max="100"
+      value="0"
+      step="1"
+    />
+  </section>
+
+  <section class="sec">
+    <div class="grid1">
+      <div class="card" data-price="24.99">
+        <img
+          src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=600&q=80"
+          alt="Bananas"
+        />
+        <h2>Fresh Bananas</h2>
+        <p class="price">
+          <span class="original-price">$24.99</span>
+          <span class="discount-tag"></span>
+          <span class="discounted-price"></span>
+        </p>
+      </div>
+      <div class="card" data-price="29.99">
+        <img
+          src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=600&q=80"
+          alt="Strawberries"
+        />
+        <h2>Sweet Strawberries</h2>
+        <p class="price">
+          <span class="original-price">$29.99</span>
+          <span class="discount-tag"></span>
+          <span class="discounted-price"></span>
+        </p>
+      </div>
+      <div class="card" data-price="19.99">
+        <img
+          src="https://images.unsplash.com/photo-1567306301408-9b74779a11af?auto=format&fit=crop&w=600&q=80"
+          alt="Apples"
+        />
+        <h2>Red Apples</h2>
+        <p class="price">
+          <span class="original-price">$19.99</span>
+          <span class="discount-tag"></span>
+          <span class="discounted-price"></span>
+        </p>
+      </div>
+      <div class="card" data-price="34.99">
+        <img
+          src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80"
+          alt="Watermelon"
+        />
+        <h2>Juicy Watermelon</h2>
+        <p class="price">
+          <span class="original-price">$34.99</span>
+          <span class="discount-tag"></span>
+          <span class="discounted-price"></span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="fot">
+    <p>Thank you for watching</p>
+  </footer>
+
+  <script src="ecom.js"></script>
+</body>
+</html>

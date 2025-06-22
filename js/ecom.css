@@ -1,0 +1,364 @@
+/* Basic reset and font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #333;
+  }
+  
+  nav.navi {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  nav.navi .head1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 1.2px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-list li a:hover {
+    background-color: #34495e;
+  }
+  
+  /* Dropdown styling */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #34495e;
+    padding: 10px 0;
+    border-radius: 4px;
+    margin-top: 8px;
+    min-width: 140px;
+    z-index: 10;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content li {
+    padding: 8px 20px;
+  }
+  
+  .dropdown-content li a {
+    color: white;
+    display: block;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #3d566e;
+  }
+  
+  /* Search input & Account link */
+  .search-account {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  nav input[type='text'] {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    width: 180px;
+  }
+  
+  #searchbutton {
+    background-color: #e67e22;
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  #searchbutton:hover {
+    background-color: #d35400;
+  }
+  
+  .account-link {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .account-link:hover {
+    background-color: #34495e;
+  }
+  
+  /* Cart icon */
+  .cart-container {
+    color: white;
+    font-size: 1.4rem;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cart-container sub {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  
+  /* Hero section */
+  .hero {
+    display: flex;
+    background: white;
+    margin: 30px auto;
+    max-width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+  }
+  
+  .hero-image img {
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+  }
+  
+  .hero-content {
+    padding: 40px 35px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .special-offer {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #d35400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .special-offer i {
+    color: #e67e22;
+    font-size: 1.4rem;
+  }
+  
+  .special-offer span {
+    color: #c0392b;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  
+  .order-button {
+    background-color: #e67e22;
+    color: white;
+    padding: 15px 30px;
+    font-weight: 700;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    align-self: start;
+  }
+  
+  .order-button:hover {
+    background-color: #d35400;
+  }
+  
+  /* Products grid */
+  .sec {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 0.15);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card h2 {
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+    color: #2c3e50;
+  }
+  
+  .card p {
+    font-weight: 700;
+    color: #e67e22;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  .fot {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #2c3e50;
+    color: white;
+    font-weight: 600;
+    margin-top: 50px;
+    letter-spacing: 0.8px;
+  }
+/* Existing styles here... (same as previous ecom.css) */
+
+/* Add these styles: */
+
+.price {
+    margin: 10px 0 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #e67e22;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .original-price {
+    text-decoration: none;
+    color: #999;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .original-price.discounted {
+    text-decoration: line-through;
+    color: #bbb;
+  }
+  
+  .discount-tag {
+    color: #c0392b;
+    font-weight: 700;
+    font-size: 0.95rem;
+    background-color: #fceae9;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  
+  .discounted-price {
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 1.15rem;
+  }
+  
+  .discount-section {
+    max-width: 1100px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .discount-section input {
+    width: 60px;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1.5px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .discount-section input:focus {
+    border-color: #e67e22;
+  }
+  
+  /* Make sure discounted price stands out */
+  
+
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      max-width: 90%;
+    }
+    .hero-image img {
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+      height: auto;
+    }
+    .hero-content {
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .order-button {
+      align-self: center;
+    }
+  }
+  
